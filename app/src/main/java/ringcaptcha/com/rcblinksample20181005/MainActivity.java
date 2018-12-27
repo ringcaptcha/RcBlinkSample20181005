@@ -1,17 +1,15 @@
 package ringcaptcha.com.rcblinksample20181005;
 
 import android.Manifest;
-import android.content.Context;
 import android.content.pm.PackageManager;
 import android.os.Build;
-import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Toast;
 
+import com.thrivecom.ringcaptcha.RingFlashApplicationHandler;
 import com.thrivecom.ringcaptcha.RingcaptchaApplication;
-import com.thrivecom.ringcaptcha.RingcaptchaApplicationHandler;
-import com.thrivecom.ringcaptcha.RingcaptchaVerification;
+import com.thrivecom.ringcaptcha.ringflashsdk.model.RingFlashResponse;
 
 public class MainActivity extends AppCompatActivity {
     private final int PERMISSIONS = 1;
@@ -53,9 +51,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void verify() {
-        RingcaptchaApplication.verifyPhoneNumberViaFlashCall(getApplicationContext(), RINGCAPTCHA_APP_KEY, RINGCAPTCHA_SECRET_KEY, new RingcaptchaApplicationHandler() {
+        RingcaptchaApplication.verifyPhoneNumberViaFlashCall(getApplicationContext(), RINGCAPTCHA_APP_KEY, RINGCAPTCHA_SECRET_KEY, new RingFlashApplicationHandler() {
             @Override
-            public void onSuccess(RingcaptchaVerification ringObj) {
+            public void onSuccess(RingFlashResponse ringObj) {
                 Toast.makeText(getApplicationContext(), "Successfully verified!", Toast.LENGTH_LONG).show();
             }
 
