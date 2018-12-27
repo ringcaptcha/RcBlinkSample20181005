@@ -35,6 +35,8 @@ public class MainActivity extends AppCompatActivity {
             } else {
                 verify();
             }
+        } else {
+            verify();
         }
     }
 
