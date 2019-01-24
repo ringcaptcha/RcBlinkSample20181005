@@ -13,8 +13,11 @@ import com.thrivecom.ringcaptcha.RingcaptchaVerification;
 
 public class MainActivity extends AppCompatActivity {
     private final int PERMISSIONS = 1;
-    public static final String RINGCAPTCHA_APP_KEY = "YOUR_APP_KEY";
-    public static final String RINGCAPTCHA_SECRET_KEY = "YOUR_SECRET_KEY";
+    // You need app key and secret to run this sample.
+    // If you have not created your account, please sign up here. https://my.ringcaptcha.com/register
+    // After signing up, please create an app and you will get the keys.
+    public static final String RINGCAPTCHA_APP_KEY = "YOUR_APP_KEY"; // Replace with your app key
+    public static final String RINGCAPTCHA_SECRET_KEY = "YOUR_SECRET_KEY"; // Replace with your secret
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
