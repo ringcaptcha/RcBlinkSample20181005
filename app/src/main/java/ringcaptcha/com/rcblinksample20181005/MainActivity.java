@@ -10,7 +10,6 @@ import android.widget.Toast;
 import com.thrivecom.ringcaptcha.RingcaptchaApplication;
 import com.thrivecom.ringcaptcha.RingcaptchaApplicationHandler;
 import com.thrivecom.ringcaptcha.RingcaptchaVerification;
-import com.thrivecom.ringcaptcha.ringflashsdk.model.RingFlashResponse;
 
 public class MainActivity extends AppCompatActivity {
     private final int PERMISSIONS = 1;
